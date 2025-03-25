@@ -1,12 +1,70 @@
-# React + Vite
+# WorkGlobal - International Client Task & Holiday Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+WorkGlobal is a web application designed to help manage international clients' tasks efficiently while checking public holidays across different countries. The application provides a **modern UI**, seamless **task management**, and **holiday tracking** to ensure better scheduling.
 
-Currently, two official plugins are available:
+## Features
+- **Task Management**: Add, delete, and manage tasks with priority levels.
+- **Holiday Checking**: Fetch public holidays for selected countries and dates.
+- **Modern UI**: A clean and responsive design using React-Bootstrap.
+- **State Management**: Uses Redux for efficient state handling.
+- **Timezone Adjustments**: Ensures accurate date selection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, React-Bootstrap, Redux
+- **Backend**: Uses a holiday API for fetching public holidays
+- **State Management**: Redux, Redux Thunk
 
-## Expanding the ESLint configuration
+## Prerequisites
+Ensure you have the following installed:
+- Node.js (v16+ recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation & Setup
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-repo/workglobal.git
+   cd workglobal
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install  # or yarn install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev 
+   ```
+   The app will be available at `http://localhost:3000`
+
+## Project Structure
+```
+workglobal/
+│── src/
+│   ├── components/
+│   │   ├── TaskInput.jsx
+│   │   ├── TaskList.jsx
+│   │   ├── HolidayInfo.jsx
+│   ├── redux/
+│   │   ├── actions/
+│   │   ├── reducers/
+│   ├── App.jsx
+│   ├── store.js
+│── public/
+│── package.json
+│── README.md
+```
+
+## API Integration
+- The application fetches holidays using `https://openholidaysapi.org`.
+- Ensure you have an internet connection while checking for holidays.
+
+## Developer
+- Vinay Koshti - [GitHub Profile](https://github.com/Vinayrk2)
+
+## Support
+For issues, please open a ticket on GitHub or contact the maintainer.
+
+Happy Coding! 🚀
+
